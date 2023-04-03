@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import sys
+
 import requests
 
 """A python code that fetches status using requests"""
