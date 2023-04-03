@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-import sys
-import requests
 
-"""This is a python that searches for repo's in github"""
+"""This is a python that searches for repo's in github
+   and the various commits made by the user and the repo
+"""
 
 if __name__ == "__main__":
+    import sys
+    import requests
     repo = sys.argv[1]
     owner = sys.argv[2]
     url = f'https://api.github.com/repos/{owner}/{repo}/commits'
