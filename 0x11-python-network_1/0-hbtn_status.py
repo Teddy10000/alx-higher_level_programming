@@ -4,13 +4,13 @@
 A script that fetches the alx intranet/status
 """
 
-import urllib.request
+import urllib
 
 if __name__ == '__main__':
     
-          request = urllib.request.Request("https://alx-intranet.hbtn.io/status")
+          requests = urllib.request.Request("https://alx-intranet.hbtn.io/status")
 
-          with urllib.request.urlopen(request) as response:
+          with urllib.request.urlopen(requests) as response:
              message = response.read()
              print(format(message))
              print(f"Body response:")
